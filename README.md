@@ -31,7 +31,7 @@ A crude wireframe for the UI could look something like this:
 This means if a user chooses `birth_date` as a member attribute to target, let's give them the option "in" and a dropdown with months like in the picture above. So, if we took that wireframe above as our given inputs, it would be a configuration for "send message id 123 to members with birth dates in January"
 
 
-##Requirements:
+## Requirements:
 Build the Campaign app to allow configurations for the following three attributes:
 - Join Date
 - Zip Codes
@@ -47,7 +47,7 @@ Build the Campaign app to allow configurations for the following three attribute
 
 For each configuration set, find the members that match the criteria and send that group the selected message (see "Sending Messages"")
 
-####Sending Messages
+#### Sending Messages
 
 This React App includes a `Start Campaign Button` and `Campaigns Log Output`
 - The Start Campaign Button should start the campaign and "send" messages to the members 
@@ -85,7 +85,7 @@ See below for an example of what a Campaign output could look like:
 
 Feel free to style the logs however you'd like and with how much detail you think is necessary. This is where we'll be looking for your filter logic's correctness and to see if our criteria has been met.
 
-##Submission:
+## Submission:
 - Please host the repo for the app (Github, Bitbucket, etc.) and send a link to it to `adrian@noterouter.com`  with your name and contact information
 - Make sure to include a README file with instruction on how to run it, including any dependencies you might have. You can also add pseudo-code, technical notes, or design explanations here.
 
