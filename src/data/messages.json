@@ -1,0 +1,26 @@
+[
+  {
+    "message_id": 123,
+    "title": "Meeting Tomorrow!",
+    "message": "Please arrive on time at 830am",
+    "draft_date": "2021-01-01"
+  },
+  {
+    "message_id": 456,
+    "title": "Day off tomorrow",
+    "message": "Enjoy your time off",
+    "draft_date": "2021-01-15"
+  },
+  {
+    "message_id": 789,
+    "title": "Look at this cute picture...",
+    "message": "of my cat!",
+    "draft_date": "2021-02-10"
+  },
+  {
+    "message_id": 112,
+    "title": "Important! Please Read",
+    "message": "Reports are due by 12pm on Friday",
+    "draft_date": "2021-02-13"
+  }
+]

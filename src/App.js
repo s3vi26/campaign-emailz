@@ -1,25 +1,19 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import { LogsContainer } from './components/LogsContainer'
+import { Dashboard } from './components/Dashboard'
+import React from 'react'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Dashboard />
+      <div>
+        <div style={{ position: 'absolute', textAlign: 'center', height: '200px', background: '#242424', width: '100%', overflowY: 'scroll', marginTop: '100px'}}>
+          <LogsContainer />
+        </div>
+      </div>
+    </>
+  )
 }
 
-export default App;
+export default App
