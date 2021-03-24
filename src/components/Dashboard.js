@@ -83,15 +83,33 @@ const Dashboard = () => {
         method: 'POST',
         url: 'https://qa8lmqoir2.execute-api.us-east-1.amazonaws.com/dev/members/send',
         headers: {
-          'Content-Type': "application/json",
-          "Access-Control-Allow-Origin": "*"
+          'Content-Type': 'text/plain',
+          "Accept": "*/*"
         },
-        body: {
+        data: {
           emails,
           message_id
         }
       });
       console.log(res);
+      const data = res.data;
+      if (data.failed.length > 0) {
+        setEmails([]);
+        emails.push(data.failed);
+        const response = await axios({
+          method: 'POST',
+          url: 'https://qa8lmqoir2.execute-api.us-east-1.amazonaws.com/dev/members/send',
+          headers: {
+            'Content-Type': 'text/plain',
+            "Accept": "*/*"
+          },
+          data: {
+            emails,
+            message_id
+          }
+        });
+        console.log(response);
+      }
       setEmails([]);
       setMessage_id('');
       setAttribute('');
