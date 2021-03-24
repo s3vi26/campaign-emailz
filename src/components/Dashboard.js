@@ -77,13 +77,16 @@ const Dashboard = () => {
         break;
     }
     try {
+      console.log(emails);
+      console.log(message_id);
       const res = await axios({
         method: 'POST',
         url: 'https://qa8lmqoir2.execute-api.us-east-1.amazonaws.com/dev/members/send',
         headers: {
-          'Content-Type': "application/json"
+          'Content-Type': "application/json",
+          "Access-Control-Allow-Origin": "*"
         },
-        data: {
+        body: {
           emails,
           message_id
         }
